@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yêu Bé Trang của Thanh ❤</title>
+    <link rel="shortcut icon" type="image/png" href="./img/heart.png"/>
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <style>
@@ -14,6 +15,7 @@
         height: 100%;
         background: pink;
     }
+
     .bg_heart {
         position: fixed;
         top: 0;
@@ -84,27 +86,32 @@
         padding-top: 20px;
         text-align: center;
     }
-    .cauhon{
+
+    .cauhon {
         display: none;
     }
-    .traonhan{
+
+    .meme {
         display: none;
     }
-    p{
-        padding:10px 0;
+
+    h1{
+        font-size: 25px;
     }
 </style>
 
 <body>
     <div class="yeutrang">
         <h1>Yêu Bé Trang Cute của Thanh😘</h1>
-        <p>"Lêu Lêu"</p>
-<!--         <div>
+        <div class="meme">
+            <img src="./img/leuleu.gif" alt="">
+        </div>
+        <!--         <div>
             <h2 class="cauhon">Làm Vợ anh nhé ❤</h2>
             <h2 class="traonhan">Đeo 💍 cho bé iu nè 😍</h2>
         </div> -->
     </div>
-   
+
     <div class="bg_heart"></div>
     <!-- <script src="heart.js"></script> -->
     <script>
@@ -112,7 +119,7 @@
             var love = setInterval(function () {
                 var r_num = Math.floor(Math.random() * 40) + 1;
                 var r_size = Math.floor(Math.random() * 65) + 10;
-                var r_left = Math.floor(Math.random() * 100) + 1;
+                var r_left = Math.floor(Math.random() * 85) + 1;
                 var r_bg = Math.floor(Math.random() * 25) + 100;
                 var r_time = Math.floor(Math.random() * 5) + 5;
 
@@ -128,13 +135,13 @@
                     }
                 });
             }, 500);
-        }, 2000);
+        }, 1000);
         setTimeout(function () {
-            $('.cauhon').show();
-        },5000)
+            $('.meme').show();
+        }, 5000)
         setTimeout(function () {
             $('.traonhan').show();
-        },7000)
+        }, 7000)
     </script>
 </body>
 
